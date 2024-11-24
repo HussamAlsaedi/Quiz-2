@@ -86,7 +86,7 @@ public class BookController {
     }
 
    @GetMapping("/changeStatus/{index}/{indexBook}")
-    public ResponseEntity changeStatus(@PathVariable int index,int indexBook)
+    public ResponseEntity changeStatus(@PathVariable int index,@PathVariable int indexBook )
     {
         if (userService.checkUser(index))
         {
